@@ -1,11 +1,11 @@
 import * as DB from "../../db/index_prod";
 
 export const findAll = (req, res) => {
-  return res.json({
-    ok: true,
-    data: DB.findAll(),
-  });
-};
+    return res.json({
+      ok: true,
+      data: DB.findAll(),
+    });
+  };
 
 export const findOne = (req, res) => {
   const { id } = req.params;
